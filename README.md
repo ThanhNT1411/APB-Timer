@@ -51,3 +51,5 @@ Note: the div_en and div_val is not related to frequency divisor (clock divider)
 # Timer Interrupt
 - Timer interrupt (tim_int) is asserted (set) when interrupt is enabled and counter’s value matches (equal) the compare value.
 - Once asserted, the timer interrupt (tim_int) remains unchange until it is cleared by writing 1 to TISR.int_st bit or the interrupt is disabled.
+# Block diagram example
+![block diagram](docs/Block_diagram.png)
