@@ -1,0 +1,1 @@
+coverage exclude -scope /test_bench -togglenode {tim_paddr[0]} {tim_paddr[1]} {tim_paddr[6]} {tim_paddr[7]} {tim_paddr[8]} {tim_paddr[9]} {tim_paddr[10]} {tim_paddr[11]} -comment {reserved address register -> can not coverage} 

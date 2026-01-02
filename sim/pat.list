@@ -1,0 +1,10 @@
+apb_check
+reg_reset_value
+reg_rw_access
+reg_strobe
+reg_error_check
+cnt_default_mode
+cnt_control_mode
+int_check
+halt_check
+//template
