@@ -18,6 +18,14 @@ all_wave: build run wave
 
 all_cov: build_cov run_cov
 
+all_tc: clean
+	./run.csh
+	./report.csh
+
+all_tc_cov: clean
+	./run.csh cov
+	./report.csh
+
 drc:
 	verilator --lint-only -Wall -f rtl.f
 build:
@@ -63,9 +71,7 @@ clean:
 	rm -rf log
 	rm -rf coverage
 	rm -rf *~
-a: clean
-	./run.csh cov
-	./report.csh
+
 help:
 	@echo ""
 	@echo "****************************************"
@@ -78,6 +84,8 @@ help:
 	@echo "** make all_cov  : build and run simulation in coverage mode"
 	@echo "** make wave     : open waveform"
 	@echo "** make gen_cov  : merge, generate coverage data base and text coverage report"
-	@echo "** make gen_cov  : merge, gemerate coverage data base and html coverage report"
+	@echo "** make gen_cov  : merge, generate coverage data base and html coverage report"
+	@echo "** make all_tc      : run all test case"
+	@echo "** make all_tc_cov  : run all test case in coverage mode"
 	@echo "****************************************"
 	@echo ""

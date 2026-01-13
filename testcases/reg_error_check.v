@@ -30,15 +30,15 @@ task run_test();
 	mst_wr(TCR_ADDR,32'h003,STRB_FULL);
 	mst_wr(TCR_ADDR,32'h000,STRB_FULL);
 	mst_rd(TCR_ADDR,rdata);
-	cmp_data(32'h0000,rdata);
-	pslverr_check(0);
+	cmp_data(32'h0003,rdata);
+	pslverr_check(1);
 
 	reset();
 	mst_wr(TCR_ADDR,32'h003,STRB_FULL);
 	mst_wr(TCR_ADDR,32'h003,STRB_FULL);
 	mst_rd(TCR_ADDR,rdata);
 	cmp_data(32'h0003,rdata);
-	pslverr_check(1);
+	pslverr_check(0);
 
 	reset();
 	mst_wr(TCR_ADDR,32'h002,STRB_FULL);
@@ -62,15 +62,15 @@ task run_test();
 	mst_wr(TCR_ADDR,32'h101,STRB_FULL);
 	mst_wr(TCR_ADDR,32'h300,STRB_FULL);
 	mst_rd(TCR_ADDR,rdata);
-	cmp_data(32'h300,rdata);
-	pslverr_check(0);
+	cmp_data(32'h101,rdata);
+	pslverr_check(1);
 
 	reset();
 	mst_wr(TCR_ADDR,32'h101,STRB_FULL);
 	mst_wr(TCR_ADDR,32'h101,STRB_FULL);
 	mst_rd(TCR_ADDR,rdata);
 	cmp_data(32'h101,rdata);
-	pslverr_check(1);
+	pslverr_check(0);
 
 	reset();
 	mst_wr(TCR_ADDR,32'h100,STRB_FULL);
