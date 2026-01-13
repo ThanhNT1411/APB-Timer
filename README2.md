@@ -46,7 +46,8 @@ APB-Timer/
 └── README.md          # This file
 
 # 🏗️ System Architecture
-Show Image
+![block diagram](docs/Block_diagram.png)
+
 The Timer module consists of main components:
 
 APB Slave Interface: Interface with APB bus
