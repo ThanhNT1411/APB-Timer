@@ -1,16 +1,21 @@
 # APB Timer Module
 A 64-bit Timer module customized from the CLINT module of industrial RISC-V architecture, using APB (Advanced Peripheral Bus) protocol.
-**🎯 Overview**
+# 🎯 Overview
 APB Timer Module is a 64-bit timer IP core operating as an APB slave, designed for precise time counting and generating periodic interrupts in embedded systems. The module supports multiple flexible operating modes and has good debugging capabilities.
 # ✨ Features
 **Key Features**
+
 **64-bit Counter**: Count-up with 64-bit width
+
 **APB Protocol:**
+
 APB slave with 12-bit address
 Wait state support (1 cycle)
 Error handling
 Byte access support
+
 **Debug Mode:** Halt support in debug mode
+
 **Reset:** Active low async reset
 **Clock Divider:** Counter can count based on system clock or divided up to 256
 **Interrupt:** Timer interrupt support (can be enabled/disabled)
