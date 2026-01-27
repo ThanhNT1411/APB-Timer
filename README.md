@@ -138,16 +138,24 @@ Once asserted, timer interrupt remains unchanged until:
 
 ## Simulation
 
-**Run Simulation:**
-
+**Run Simulation:**  
 ```bash
 cd sim/
 make all_tc     # run all test case
+```  
+**Run Simulation with coverage mode:**  
+```bash
+cd sim/
 make all_tc_cov # run all test case with coverage mode
-make help       # to more detail 
-vi pat.list and type "//" to disable testcase
 ```
-
+**Disable test case:**  
+```bash
+vi pat.list     # and type "//" to disable testcase
+```  
+**Help:**  
+```bash
+make help       # to more detail 
+```
 **Test Cases:**
 
 The testcases/ directory contains various test cases to verify:
